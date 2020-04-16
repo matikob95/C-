@@ -1,0 +1,26 @@
+public class Main
+{
+	byte b=127; 
+	short s=32767;
+	int i=-2147483648;
+	long l=92233720368547758071;
+	float f=3.4444444f;
+	double d=3.777654545656345645;
+	char c='a';
+	String string = "To jest jakiś tekst";
+	public static void main (String[] args)
+	{
+		int wynik = 5;
+		System.out.println("Wynik = " + wynik);
+	}
+}
+/*
+Pierwszy program w języku Java.
+*/
+class Example{
+ //Program Java rozpoczyna działąnie od wywołania main().
+	public static void main (Sting args[]){
+	System.out.println("Java rządzi siecią.");
+	}
+}
+	
