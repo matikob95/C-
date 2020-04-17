@@ -1,0 +1,54 @@
+<?php
+	$pageName = $_GET['action']?? null;
+	var_dump($pageName);
+?>
+<html>
+<head>
+	<style>
+	 h1{
+	   color:red;
+	   }
+	
+	a {
+		color:lightcoral;
+		text-decoration:none;
+	}
+	
+	a:hover {
+		text-decoration:underline;
+	}
+</style>
+</head>
+
+<body>
+  <h1>Futbolare-strona o lidze włoskiej</h1>
+	<nav>
+	 <ul>
+	  <li>
+	  <a hrer="/">Strona główna</a>
+	  </li>
+	   <li>
+	  <a hrer="/?action=page1">Podstrona pierwsza</a>
+	  </li>
+	   <li>
+	  <a hrer="/?action=page2">Podstrona druga</a>
+	  </li>
+	  <li>
+	  <a hrer="/?action=page3">Podstrona trzecia</a>
+	  </li>
+	 </ul>
+	</nav>
+	<section>
+	<?php elseif($pageName === 'page1'): ?>	
+		<h3>SerieA</h3>
+	<?php elseif($pageName === 'page2'): ?>		
+		<h3>Artykuły</h3>
+	<?php elseif($pageName === 'page3'): ?>		
+		<h3>Tabele i statystyki</h3>
+	<?php else: ?>
+		<h3>Strona główna</h3>
+	<?php endif; ?>
+	</section>
+</body>
+
+<html>
